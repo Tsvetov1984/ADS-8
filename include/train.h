@@ -3,7 +3,7 @@
 #define INCLUDE_TRAIN_H_
 
 class Train {
-private:
+ private:
     struct Cage {
         bool light; // состояние лампочки
         Cage *next;
@@ -20,7 +20,7 @@ private:
 
     int countOp; // счетчик шагов (число переходов из вагона в вагон)
     Cage *first; // точка входа в поезд (первый вагон)
-public:
+ public:
     Train();
 
     void addCage(bool light); // добавить вагон с начальным состоянием лампочки
